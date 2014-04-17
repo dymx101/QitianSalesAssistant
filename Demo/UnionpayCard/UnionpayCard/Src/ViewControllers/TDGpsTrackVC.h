@@ -14,8 +14,7 @@
 {
     CLLocationDistance _storedLatitudeDelta;
     CLLocationDistance _storedLongitudeDelta;
-    UIBackgroundTaskIdentifier _backgroundTask;
-    NSTimeInterval _backgroundUpdateInterval;
+    
 }
 
 @property (nonatomic, strong) CLLocationManager *locationManager;
