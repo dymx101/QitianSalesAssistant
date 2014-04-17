@@ -17,7 +17,7 @@
 #import "TDMailVC.h"
 #import "TDLifeVC.h"
 #import "TDRegisterVC.h"
-#import "TDPhoneFeeVC.h"
+#import "TDDummyVC.h"
 #import "TDLoginVC.h"
 #import "TDLogVendorsVCViewController.h"
 
@@ -80,65 +80,76 @@ typedef enum {
 //    [self.view addSubview:_pageControl];
     
     //
+    
+    int tag = kVcRegister;
+    
     UIButton *btnTile = [UIButton new];//[self tileButtonWithTitle:@"用户\n注册" action:nil];
     [btnTile setImage:[UIImage imageNamed:@"btn_facebook"] forState:UIControlStateNormal];
-    btnTile.tag = kVcVendors;//kVcRegister;
+    btnTile.tag = tag;
     [btnTile addTarget:self action:@selector(tileButtonAction:) forControlEvents:UIControlEventTouchUpInside];
     [_scrollView addSubview:btnTile];
     [_tileButtons addObject:btnTile];
     
+    tag++;
     btnTile = [UIButton new];//[self tileButtonWithTitle:@"卡片\n管理" action:nil];
     [btnTile setImage:[UIImage imageNamed:@"btn_twitter"] forState:UIControlStateNormal];
-    btnTile.tag = kVcCardList;
+    btnTile.tag = tag;
     [btnTile addTarget:self action:@selector(tileButtonAction:) forControlEvents:UIControlEventTouchUpInside];
     [_scrollView addSubview:btnTile];
     [_tileButtons addObject:btnTile];
     
+    tag++;
     btnTile = [UIButton new];//[self tileButtonWithTitle:@"商户\n浏览" action:nil];
     [btnTile setImage:[UIImage imageNamed:@"btn_linkedin"] forState:UIControlStateNormal];
-    btnTile.tag = kVcAddMoney;//kVcVendors;
+    btnTile.tag = tag;//kVcVendors;
     [btnTile addTarget:self action:@selector(tileButtonAction:) forControlEvents:UIControlEventTouchUpInside];
     [_scrollView addSubview:btnTile];
     [_tileButtons addObject:btnTile];
     
+    tag++;
     btnTile = [UIButton new];//[self tileButtonWithTitle:@"消费\n充值" action:nil];
     [btnTile setImage:[UIImage imageNamed:@"btn_yahoo"] forState:UIControlStateNormal];
-    btnTile.tag = kVcCredit;//kVcAddMoney;
+    btnTile.tag = tag;//kVcAddMoney;
     [btnTile addTarget:self action:@selector(tileButtonAction:) forControlEvents:UIControlEventTouchUpInside];
     [_scrollView addSubview:btnTile];
     [_tileButtons addObject:btnTile];
     
+    tag++;
     btnTile = [UIButton new];//[self tileButtonWithTitle:@"积分\n活动" action:nil];
     [btnTile setImage:[UIImage imageNamed:@"btn_hoovers"] forState:UIControlStateNormal];
-    btnTile.tag = kVcMail;//kVcCredit;
+    btnTile.tag = tag;//kVcCredit;
     [btnTile addTarget:self action:@selector(tileButtonAction:) forControlEvents:UIControlEventTouchUpInside];
     [_scrollView addSubview:btnTile];
     [_tileButtons addObject:btnTile];
     
+    tag++;
     btnTile = [UIButton new];//[self tileButtonWithTitle:@"消费\n预定" action:nil];
     [btnTile setImage:[UIImage imageNamed:@"btn_youtube"] forState:UIControlStateNormal];
-    btnTile.tag = kVcConsume;
+    btnTile.tag = tag;
     [btnTile addTarget:self action:@selector(tileButtonAction:) forControlEvents:UIControlEventTouchUpInside];
     [_scrollView addSubview:btnTile];
     [_tileButtons addObject:btnTile];
     
+    tag++;
     btnTile = [UIButton new];//[self tileButtonWithTitle:@"邮件\n管理" action:nil];
     [btnTile setImage:[UIImage imageNamed:@"btn_salesforce"] forState:UIControlStateNormal];
-    btnTile.tag = kVcPhoneFee;
+    btnTile.tag = tag;
     [btnTile addTarget:self action:@selector(tileButtonAction:) forControlEvents:UIControlEventTouchUpInside];
     [_scrollView addSubview:btnTile];
     [_tileButtons addObject:btnTile];
     
+    tag++;
     btnTile = [UIButton new];//[self tileButtonWithTitle:@"生活\n缴费" action:nil];
     [btnTile setImage:[UIImage imageNamed:@"btn_crunchbase"] forState:UIControlStateNormal];
-    btnTile.tag = kVcLife;
+    btnTile.tag = tag;
     [btnTile addTarget:self action:@selector(tileButtonAction:) forControlEvents:UIControlEventTouchUpInside];
     [_scrollView addSubview:btnTile];
     [_tileButtons addObject:btnTile];
     
+    tag++;
     btnTile = [UIButton new];//[self tileButtonWithTitle:@"生活\n缴费" action:nil];
     [btnTile setImage:[UIImage imageNamed:@"btn_yammer"] forState:UIControlStateNormal];
-    btnTile.tag = kVcLife;
+    btnTile.tag = tag;
     [btnTile addTarget:self action:@selector(tileButtonAction:) forControlEvents:UIControlEventTouchUpInside];
     [_scrollView addSubview:btnTile];
     [_tileButtons addObject:btnTile];
@@ -163,62 +174,57 @@ typedef enum {
 
 -(void)tileButtonAction:(UIButton *)sender {
     int tag = sender.tag;
+    
+    TDDummyVC *dummyVC = [TDDummyVC new];
+    NSString *naviTitle = nil;
+    
     switch (tag) {
         case kVcRegister:
-            [self naviToVC:[TDRegisterVC class]];
+            naviTitle = @"电子公告";
             break;
             
         case kVcCardList: {
-            if (SharedAppUser) {
-                [self naviToVC:[TDCardListVC class]];
-            } else {
-                /** gotologin */
-                TDLoginVC *vc = [TDLoginVC new];
-                UINavigationController *nc = [[UINavigationController alloc] initWithRootViewController:vc];
-                [self presentViewController:nc animated:YES completion:nil];
-            }
+            TDLoginVC *vc = [TDLoginVC new];
+            UINavigationController *nc = [[UINavigationController alloc] initWithRootViewController:vc];
+            [self presentViewController:nc animated:YES completion:nil];
+            return;
         }
             break;
             
         case kVcVendors:
-                 [self naviToVC:[TDLogVendorsVCViewController class]];
-
+            naviTitle = @"工作日报";
             break;
             
         case kVcAddMoney:
-            if (SharedAppUser) {
-                [self naviToVC:[TDAddMoneyVC class]];
-            } else {
-                /** gotologin */
-                TDLoginVC *vc = [TDLoginVC new];
-                UINavigationController *nc = [[UINavigationController alloc] initWithRootViewController:vc];
-                [self presentViewController:nc animated:YES completion:nil];
-            }
+            naviTitle = @"产品管理";
             break;
             
         case kVcCredit:
-            [self naviToVC:[TDCreditVC class]];
+            naviTitle = @"客户管理";
             break;
             
         case kVcConsume:
-            [self naviToVC:[TDConsumeVC class]];
+            naviTitle = @"客户拜访";
             break;
             
         case kVcMail:
-            [self naviToVC:[TDMailVC class]];
+            naviTitle = @"订单管理";
             break;
             
         case kVcLife:
-            [self naviToVC:[TDLifeVC class]];
+            naviTitle = @"信息上报";
             break;
             
         case kVcPhoneFee:
-            [self naviToVC:[TDPhoneFeeVC class]];
+            naviTitle = @"窜货管理";
             break;
             
         default:
             break;
     }
+    
+    dummyVC.title = naviTitle;
+    [self.navigationController pushViewController:dummyVC animated:YES];
 }
 
 #define PADDING_TOP              (20)

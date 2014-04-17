@@ -95,7 +95,7 @@
 		EAC428C618C3132C004F3941 /* tile_public@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAC428BE18C3132C004F3941 /* tile_public@2x.png */; };
 		EAC428C718C3132C004F3941 /* tile_vendor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAC428BF18C3132C004F3941 /* tile_vendor@2x.png */; };
 		EAC428CA18C315FC004F3941 /* TDLifeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC428C918C315FC004F3941 /* TDLifeVC.m */; };
-		EAC428CD18C31632004F3941 /* TDPhoneFeeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC428CC18C31632004F3941 /* TDPhoneFeeVC.m */; };
+		EAC428CD18C31632004F3941 /* TDDummyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC428CC18C31632004F3941 /* TDDummyVC.m */; };
 		EAC90DC318C22BC30086AC2F /* vendor_sample.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EAC90DC218C22BC30086AC2F /* vendor_sample.jpg */; };
 		EAC9796E18C1762600927CEE /* TDCateogryButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC9796D18C1762600927CEE /* TDCateogryButton.m */; };
 		EAC9797118C1883B00927CEE /* TDCategoryResource.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC9797018C1883B00927CEE /* TDCategoryResource.m */; };
@@ -888,14 +888,10 @@
 		EAD2F0AF18C815B400FC3805 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = EAD2F0A518C815B400FC3805 /* Icon-72.png */; };
 		EAD2F0B018C815B400FC3805 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAD2F0A618C815B400FC3805 /* Icon-72@2x.png */; };
 		EAD2F0B118C815B400FC3805 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = EAD2F0A718C815B400FC3805 /* Icon-Small-50.png */; };
-		EAD2F0B218C815B400FC3805 /* Icon-Small-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAD2F0A818C815B400FC3805 /* Icon-Small-50@2x.png */; };
 		EAD2F0B318C815B400FC3805 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = EAD2F0A918C815B400FC3805 /* Icon-Small.png */; };
 		EAD2F0B418C815B400FC3805 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAD2F0AA18C815B400FC3805 /* Icon-Small@2x.png */; };
 		EAD2F0B518C815B400FC3805 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EAD2F0AB18C815B400FC3805 /* Icon.png */; };
 		EAD2F0B618C815B400FC3805 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAD2F0AC18C815B400FC3805 /* Icon@2x.png */; };
-		EAD2F0B718C815B400FC3805 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = EAD2F0AD18C815B400FC3805 /* iTunesArtwork.png */; };
-		EAD2F0B818C815B400FC3805 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAD2F0AE18C815B400FC3805 /* iTunesArtwork@2x.png */; };
-		EAD2F0BA18C816A500FC3805 /* Icon-120.png in Resources */ = {isa = PBXBuildFile; fileRef = EAD2F0B918C816A500FC3805 /* Icon-120.png */; };
 		EAD37F9018C34019003188D4 /* TDMyAccountVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD37F8F18C34019003188D4 /* TDMyAccountVC.m */; };
 		EAD58FC618D43F220081B5A7 /* TDRegisterStep3VC.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD58FC518D43F220081B5A7 /* TDRegisterStep3VC.m */; };
 		EAD58FC918D442A20081B5A7 /* GNTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD58FC818D442A20081B5A7 /* GNTextFieldCell.m */; };
@@ -1080,8 +1076,8 @@
 		EAC428BF18C3132C004F3941 /* tile_vendor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tile_vendor@2x.png"; sourceTree = "<group>"; };
 		EAC428C818C315FC004F3941 /* TDLifeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDLifeVC.h; sourceTree = "<group>"; };
 		EAC428C918C315FC004F3941 /* TDLifeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDLifeVC.m; sourceTree = "<group>"; };
-		EAC428CB18C31632004F3941 /* TDPhoneFeeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDPhoneFeeVC.h; sourceTree = "<group>"; };
-		EAC428CC18C31632004F3941 /* TDPhoneFeeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDPhoneFeeVC.m; sourceTree = "<group>"; };
+		EAC428CB18C31632004F3941 /* TDDummyVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDDummyVC.h; sourceTree = "<group>"; };
+		EAC428CC18C31632004F3941 /* TDDummyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDDummyVC.m; sourceTree = "<group>"; };
 		EAC90DC218C22BC30086AC2F /* vendor_sample.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = vendor_sample.jpg; sourceTree = "<group>"; };
 		EAC9796C18C1762600927CEE /* TDCateogryButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDCateogryButton.h; sourceTree = "<group>"; };
 		EAC9796D18C1762600927CEE /* TDCateogryButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDCateogryButton.m; sourceTree = "<group>"; };
@@ -1902,14 +1898,10 @@
 		EAD2F0A518C815B400FC3805 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
 		EAD2F0A618C815B400FC3805 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
 		EAD2F0A718C815B400FC3805 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
-		EAD2F0A818C815B400FC3805 /* Icon-Small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50@2x.png"; sourceTree = "<group>"; };
 		EAD2F0A918C815B400FC3805 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
 		EAD2F0AA18C815B400FC3805 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
 		EAD2F0AB18C815B400FC3805 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		EAD2F0AC18C815B400FC3805 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
-		EAD2F0AD18C815B400FC3805 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
-		EAD2F0AE18C815B400FC3805 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
-		EAD2F0B918C816A500FC3805 /* Icon-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-120.png"; sourceTree = "<group>"; };
 		EAD37F8E18C34019003188D4 /* TDMyAccountVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TDMyAccountVC.h; path = UnionpayCard/Src/ViewControllers/TDMyAccountVC.h; sourceTree = SOURCE_ROOT; };
 		EAD37F8F18C34019003188D4 /* TDMyAccountVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TDMyAccountVC.m; path = UnionpayCard/Src/ViewControllers/TDMyAccountVC.m; sourceTree = SOURCE_ROOT; };
 		EAD58FC418D43F220081B5A7 /* TDRegisterStep3VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDRegisterStep3VC.h; sourceTree = "<group>"; };
@@ -2178,8 +2170,8 @@
 				EACBE40F18BF15C100F2E9CF /* TDMailVC.m */,
 				EAC428C818C315FC004F3941 /* TDLifeVC.h */,
 				EAC428C918C315FC004F3941 /* TDLifeVC.m */,
-				EAC428CB18C31632004F3941 /* TDPhoneFeeVC.h */,
-				EAC428CC18C31632004F3941 /* TDPhoneFeeVC.m */,
+				EAC428CB18C31632004F3941 /* TDDummyVC.h */,
+				EAC428CC18C31632004F3941 /* TDDummyVC.m */,
 			);
 			path = SubVCs;
 			sourceTree = "<group>";
@@ -2189,19 +2181,15 @@
 			children = (
 				4C930F6718E1DCE400838BC3 /* Default.png */,
 				4C930F6818E1DCE400838BC3 /* Default@2x.png */,
-				EAD2F0B918C816A500FC3805 /* Icon-120.png */,
 				FEAF4BDD18ED9DA700E8C2BA /* apply.png */,
 				EAD2F0A518C815B400FC3805 /* Icon-72.png */,
 				EAD2F0A618C815B400FC3805 /* Icon-72@2x.png */,
 				EAD2F0A718C815B400FC3805 /* Icon-Small-50.png */,
 				FEB9630118EAF03900D11DA7 /* icon_drag.png */,
-				EAD2F0A818C815B400FC3805 /* Icon-Small-50@2x.png */,
 				EAD2F0A918C815B400FC3805 /* Icon-Small.png */,
 				EAD2F0AA18C815B400FC3805 /* Icon-Small@2x.png */,
 				EAD2F0AB18C815B400FC3805 /* Icon.png */,
 				EAD2F0AC18C815B400FC3805 /* Icon@2x.png */,
-				EAD2F0AD18C815B400FC3805 /* iTunesArtwork.png */,
-				EAD2F0AE18C815B400FC3805 /* iTunesArtwork@2x.png */,
 				EACBD2D718C3598700DB89EE /* BackLog */,
 				EACC146518B36EE900DD27B0 /* UnionpayCard */,
 				EACC147E18B36EE900DD27B0 /* UnionpayCardTests */,
@@ -3355,7 +3343,6 @@
 				EACC17F218B36F9100DD27B0 /* bg_orderReview_slidebar_activity.png in Resources */,
 				EACC181118B36F9100DD27B0 /* bg_ticket_machine_hint_cell_bottom@2x.png in Resources */,
 				EACC193918B36F9100DD27B0 /* icon_loading_animating_2.png in Resources */,
-				EAD2F0B218C815B400FC3805 /* Icon-Small-50@2x.png in Resources */,
 				EACC190418B36F9100DD27B0 /* icon_dropdown_currentkind.png in Resources */,
 				EACC18C918B36F9100DD27B0 /* icon_cate_selected_4.png in Resources */,
 				EACC184518B36F9100DD27B0 /* btn_filter_finish@2x.png in Resources */,
@@ -3484,7 +3471,6 @@
 				EACC18C318B36F9100DD27B0 /* icon_cate_selected_0.png in Resources */,
 				EACC1A1E18B36F9200DD27B0 /* logo_share_qq.png in Resources */,
 				EACC1A5A18B36F9200DD27B0 /* share_logo_weixinFriends.png in Resources */,
-				EAD2F0B818C815B400FC3805 /* iTunesArtwork@2x.png in Resources */,
 				EACC18A818B36F9100DD27B0 /* ic_sold.png in Resources */,
 				EACC19B018B36F9100DD27B0 /* icon_order_review_yes@2x.png in Resources */,
 				EACC18C218B36F9100DD27B0 /* icon_cate_selected_-2.png in Resources */,
@@ -3501,7 +3487,6 @@
 				EACC19FF18B36F9100DD27B0 /* icon_tabbar_homepage.png in Resources */,
 				EACC195F18B36F9100DD27B0 /* icon_merchant_mark_zuo.png in Resources */,
 				EACC18B818B36F9100DD27B0 /* icon_cate_normal_1.png in Resources */,
-				EAD2F0B718C815B400FC3805 /* iTunesArtwork.png in Resources */,
 				EACC18A918B36F9100DD27B0 /* ic_sold_large.png in Resources */,
 				EACC1A3418B36F9200DD27B0 /* mc_log_animation1.png in Resources */,
 				EACC19A018B36F9100DD27B0 /* icon_myCoupon_barcode.png in Resources */,
@@ -3529,7 +3514,6 @@
 				EACC19D518B36F9100DD27B0 /* icon_refresh_header_arrow.png in Resources */,
 				EACC19AF18B36F9100DD27B0 /* icon_order_review_separatorLine@2x.png in Resources */,
 				EACC19ED18B36F9100DD27B0 /* icon_route_start_end@2x.png in Resources */,
-				EAD2F0BA18C816A500FC3805 /* Icon-120.png in Resources */,
 				EACC17CA18B36F9100DD27B0 /* bg_mine_dailyRecommned_section_normal@2x.png in Resources */,
 				EACC178F18B36F9100DD27B0 /* bg_customerReview_highlightedBar@2x.png in Resources */,
 				EACC18AD18B36F9100DD27B0 /* icon_about_meituan.png in Resources */,
@@ -4169,7 +4153,7 @@
 				EACBE41618BF2EB100F2E9CF /* UIView+Effect.m in Sources */,
 				4CB12C6C18BBC7C400F23A76 /* Bprovince.m in Sources */,
 				4C98ABF118B91E01007FAF12 /* NSNumber+safe.m in Sources */,
-				EAC428CD18C31632004F3941 /* TDPhoneFeeVC.m in Sources */,
+				EAC428CD18C31632004F3941 /* TDDummyVC.m in Sources */,
 				EACB6F8918C4B454000ED7A0 /* TDRecordCell.m in Sources */,
 				4CA68EBD18B5122400D02209 /* TDHttpClient.m in Sources */,
 				4CB12C7B18BBC90700F23A76 /* IntegType.m in Sources */,

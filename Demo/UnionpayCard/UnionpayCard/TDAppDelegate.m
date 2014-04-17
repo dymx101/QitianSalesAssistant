@@ -33,7 +33,7 @@
     _tabbarController.viewControllers = viewControllers;
     [self customizeTabBarForController:_tabbarController];
     
-    _window.rootViewController = _tabbarController;
+    _window.rootViewController = [self ncWithVC:[TDHomeVC new]];//_tabbarController;
     
     [self.window makeKeyAndVisible];
     
