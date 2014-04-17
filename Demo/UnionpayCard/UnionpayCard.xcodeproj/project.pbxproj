@@ -904,6 +904,7 @@
 		EAE3BF4918FF6B700050CEDA /* btn_yahoo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAE3BF4018FF6B700050CEDA /* btn_yahoo@2x.png */; };
 		EAE3BF4A18FF6B700050CEDA /* btn_yammer@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAE3BF4118FF6B700050CEDA /* btn_yammer@2x.png */; };
 		EAE3BF4B18FF6B700050CEDA /* btn_youtube@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAE3BF4218FF6B700050CEDA /* btn_youtube@2x.png */; };
+		EAE3BF4E18FF77A60050CEDA /* TDGpsTrackVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE3BF4D18FF77A60050CEDA /* TDGpsTrackVC.m */; };
 		FE575DB218E9BD2B00C77D71 /* Toast+UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE575DB118E9BD2B00C77D71 /* Toast+UIView.m */; };
 		FE9EC23818E98938009DE7C8 /* httpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FE9EC23718E98938009DE7C8 /* httpRequest.m */; };
 		FE9EC23B18E9894E009DE7C8 /* TDVendorsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FE9EC23A18E9894E009DE7C8 /* TDVendorsCell.m */; };
@@ -1917,6 +1918,8 @@
 		EAE3BF4018FF6B700050CEDA /* btn_yahoo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_yahoo@2x.png"; sourceTree = "<group>"; };
 		EAE3BF4118FF6B700050CEDA /* btn_yammer@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_yammer@2x.png"; sourceTree = "<group>"; };
 		EAE3BF4218FF6B700050CEDA /* btn_youtube@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_youtube@2x.png"; sourceTree = "<group>"; };
+		EAE3BF4C18FF77A60050CEDA /* TDGpsTrackVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDGpsTrackVC.h; sourceTree = "<group>"; };
+		EAE3BF4D18FF77A60050CEDA /* TDGpsTrackVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDGpsTrackVC.m; sourceTree = "<group>"; };
 		FE575DB018E9BD2B00C77D71 /* Toast+UIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Toast+UIView.h"; sourceTree = "<group>"; };
 		FE575DB118E9BD2B00C77D71 /* Toast+UIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Toast+UIView.m"; sourceTree = "<group>"; };
 		FE9EC23618E98938009DE7C8 /* httpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = httpRequest.h; sourceTree = "<group>"; };
@@ -3078,6 +3081,8 @@
 				EAC9D88318B888CF0096D555 /* TDForgetPasswordVC.m */,
 				EAD37F8E18C34019003188D4 /* TDMyAccountVC.h */,
 				EAD37F8F18C34019003188D4 /* TDMyAccountVC.m */,
+				EAE3BF4C18FF77A60050CEDA /* TDGpsTrackVC.h */,
+				EAE3BF4D18FF77A60050CEDA /* TDGpsTrackVC.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -4173,6 +4178,7 @@
 				EA901B0618B6491700B1E20F /* TDUtil.m in Sources */,
 				4CB12C6618BBC6E400F23A76 /* Bhtype.m in Sources */,
 				4CB12C5A18BBC5F800F23A76 /* Bcity.m in Sources */,
+				EAE3BF4E18FF77A60050CEDA /* TDGpsTrackVC.m in Sources */,
 				4CB12C9618BBCB4000F23A76 /* Ynbinfor.m in Sources */,
 				FE9EC23B18E9894E009DE7C8 /* TDVendorsCell.m in Sources */,
 				EAC9797118C1883B00927CEE /* TDCategoryResource.m in Sources */,

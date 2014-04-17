@@ -20,6 +20,7 @@
 #import "TDDummyVC.h"
 #import "TDLoginVC.h"
 #import "TDLogVendorsVCViewController.h"
+#import "TDGpsTrackVC.h"
 
 typedef enum {
     kVcRegister = 1000
@@ -179,8 +180,12 @@ typedef enum {
     NSString *naviTitle = nil;
     
     switch (tag) {
-        case kVcRegister:
-            naviTitle = @"电子公告";
+        case kVcRegister: {
+            TDGpsTrackVC *vc = [TDGpsTrackVC new];
+            vc.title = @"GPS";
+            [self.navigationController pushViewController:vc animated:YES];
+            return;
+        }
             break;
             
         case kVcCardList: {
